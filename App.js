@@ -13,7 +13,7 @@ export default function App() {
         <NativeBaseProvider theme={customTheme}>
             <Box
                 flex={1}
-                bg="primary.900"
+                bg="primary.main"
                 alignItems="center"
                 justifyContent="center"
             >
