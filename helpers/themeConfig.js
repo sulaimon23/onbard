@@ -7,9 +7,15 @@ export default theme = {
         },
         text: {
             main: "#222222",
-            light: "#E7F1FE",
+            label: "#848484",
+            white: "#fff",
+            orange: "#FF9F29",
         },
+        border: "#464646",
     },
-    fontSizes: {},
-    fonts: {},
+    fontSizes: {
+        h1: "26px",
+        h2: "16px",
+        h3: "16px",
+    },
 };
