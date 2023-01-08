@@ -32,11 +32,12 @@ export default function App() {
                 bg="white"
                 alignItems="center"
                 justifyContent="center"
+                p="5"
             >
                 <Text fontFamily="light" color="text.main">
                     Open up App.js to start working on your app!
                 </Text>
-                <CustomButton title={"dmdkl"} />
+                <CustomButton isLoading={true} isIcon={true} title={"Submit"} />
             </Box>
         </NativeBaseProvider>
     );
