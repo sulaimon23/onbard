@@ -3,7 +3,7 @@ import { TextInput, StyleSheet } from "react-native";
 import { View, Text } from "native-base";
 import PropTypes from "prop-types";
 
-import COLORS from "./constants";
+import COLORS from "../helpers/constants";
 import Ionicons from "@expo/vector-icons/Ionicons";
 
 const CustomInput = ({
