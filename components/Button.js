@@ -1,4 +1,5 @@
 import { Button, Image } from "native-base";
+import PropTypes from "prop-types";
 const arrow = require("../assets/arrow.png");
 
 //
@@ -45,4 +46,11 @@ const CustomButton = ({
     );
 };
 
+CustomButton.propTypes = {
+    title: PropTypes.string.isRequired,
+    onPress: PropTypes.func.isRequired,
+    isLoading: PropTypes.bool,
+    isIcon: PropTypes.bool,
+};
+//
 export default CustomButton;
