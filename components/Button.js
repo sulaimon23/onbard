@@ -21,7 +21,6 @@ const CustomButton = ({
             style={{
                 height: 55,
                 width: "100%",
-                marginVertical: 20,
                 justifyContent: "center",
                 alignItems: "center",
             }}
