@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import { Text, View, Flex, Button } from "native-base";
+import { Text, View, Flex } from "native-base";
 import { ImageBackground, SafeAreaView, TouchableOpacity } from "react-native";
 import CustomButton from "../components/Button";
 import { MaterialIcons } from "@expo/vector-icons";
 
 //
 //
-const OnboardingScreen = () => {
+const OnboardingScreen = (props) => {
+    const { navigation } = props;
+
     const [bg, setBg] = useState(0);
     const pageInfo = [
         {
@@ -32,6 +34,7 @@ const OnboardingScreen = () => {
     //
     const isProceed = () => {
         if (bg === 2) {
+            navigation.navigate("LogInScreen");
             return;
         }
         setBg((prev) => prev + 1);

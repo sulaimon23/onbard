@@ -3,6 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import OnboardingScreen from "../screens/OnboardingScreen";
+import LogInScreen from "../screens/LogInScreen";
 //
 // create Navigation
 const Stack = createStackNavigator();
@@ -21,6 +22,7 @@ const Navigation = () => {
                         />
                     )}
                 </Stack.Screen>
+                <Stack.Screen name="LogInScreen" component={LogInScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );
